@@ -23,7 +23,7 @@ public class TrieStructure {
 
         System.out.println(dict.search("dog"));
         System.out.println(dict.search("doggo"));
-        
+
         System.out.println(dict.words());
 
     }
@@ -67,28 +67,28 @@ public class TrieStructure {
 
         return node.isWordEnding;
     }
-    
+
     public List<String> words() {
         return dfs(root, new StringBuilder(), new ArrayList<String>());
     }
-    
+
     private List<String> dfs(TrieNode node, StringBuilder sb, List<String> results) {
         if (node == null) {
             return results;
         }
-        
+
         System.out.println(sb);
-        
+
         if (node.isWordEnding) {
             results.add(sb.toString());
         }
-        
+
         for (int i = 0; i < node.children.length; i++) {
             StringBuilder sbChild = new StringBuilder(sb);
             sbChild.append((char) ('a' + i));
             dfs(node.children[i], sbChild, results);
         }
-        
+
         return results;
     }
 
