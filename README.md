@@ -1,8 +1,8 @@
 # InterviewPrep
-Interview preparation for algo/DS. Solutions in Java.
+Interview preparation for Algo/DS. Solutions in Java.
 
-## Use
-Use this repo at your own risk. I don't maintain it or guarantee it's accuracy.
+## Usage
+Use this repo to understand and practice the common interview questions.
 
 ## Contribution
-I would be happy to accept contributions. 
+I would be happy to accept contributions. Shoot me a PR.
